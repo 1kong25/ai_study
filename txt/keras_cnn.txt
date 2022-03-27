@@ -1,0 +1,12 @@
+* Keras CNN구조 *
+Conv -> ReLU -> Pooling -> Conv -> ReLU -> Affine -> Softmax
+
+Convolutional layer : Edge 등의 각 pixel 간 연관되어 있는 특성을 추출하기 위한 filter 기능을 수행한다. 다수의 데이터를 활용한 학습을 통해서 Filter 의 계수를 획득한다.
+Pooling layer : Subsampling 을 통해서 사이즈를 줄임으로써 Parameter 을 감소시켜 over fitting 문제를 해결한다.
+Relu layer : 0보다 작으면 0으로, 크면 그대로 출력하는 활성화 함수가 포함된 Layer
+Softmax layer : 최종적으로 입력받은 이미지를 특정 한글로 확률 값을 예측하는 Layer
+
+* 글자에 정수 인코딩 *
+글자의 경우 그 자체가 Index가 되지 못하기 때문에 글자에 Index 부여
+이러한 각 글자에 고유한 정수를 mapping시키는 과정이 정수 인코딩(Integer Encoding)
+Dictionary와 enumerate를 조합하여 Encoding, Decoding을 위한 두가지 Dictionary를 생성

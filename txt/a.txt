@@ -1,0 +1,11 @@
+TensorFlow;
+다양한 작업에대해 데이터 흐름 프로그래밍, 머신러닝을 위한 오픈소스 소프트웨어 라이브러리
+심볼릭 수학 라이브러리이자, 인공 신경망같은 기계 학습 응용프로그램 및 딥러닝(deep Learning)에도 사용
+텐서플로 연산은 상태를 가지는 데이터 흐름 유향 그래프로 표현됨
+
+Keras;
+파이썬으로 작성된 오픈 소스 신경망 라이브러리
+MXNet, Deeplearning4j, 텐서플로, Microsoft Cognitive Toolkit 또는 Theano 위에서 수행 가능
+
+Mnist 데이터셋;
+세 종류의 데이터셋으로 나눠짐(학습용 데이터인 mnist.train, 학습된 모델을 테스트하기 위한 테스트 데이터 셋인 mnust.test, 모델을 확인하기 위한 mnist.validation)
